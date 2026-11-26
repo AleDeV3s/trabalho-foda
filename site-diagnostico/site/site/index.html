@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anatomia Humana Aplicada ao Diagnóstico por Imagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Anatomia Humana Aplicada ao Diagnóstico por Imagem</h1>
+    <p>UniFECAF · Planos, eixos, localização topográfica e estruturas (RX, TC e RM)</p>
+    <p class="integrantes">Integrantes: <em>Sophia Menezes, Thayenne Eduarda, Beatriz Almeida, Monica Silva, Yandra Cristhal, Ana Giselly, Ana Clara Maxímo, Anny da Silva, Vitória Aparecida, Ana Clara Pires,  </em></p>
+  </header>
+
+  <section class="legenda">
+    <strong>Legenda:</strong> A = Anterior · P = Posterior · S = Superior · I = Inferior ·
+    D = Direito · E = Esquerdo · M = Medial · L = Lateral. A seta amarela marca a estrutura-alvo.
+  </section>
+
+  <nav>
+    <div id="filtros"></div>
+    <input id="busca" type="search" placeholder="Buscar estrutura, exame...">
+    <button id="btnTodas">Mostrar todas as respostas</button>
+    <span id="progresso"></span>
+  </nav>
+
+  <main id="lista"></main>
+
+  <footer>Atividade prática · Bônus de +0,5 ponto na média</footer>
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

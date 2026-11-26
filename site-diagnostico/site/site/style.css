@@ -1,0 +1,31 @@
+:root { --bg:#f4f6f9; --card:#fff; --txt:#1f2937; --azul:#0b5ed7; --verde:#198754; --borda:#d9dee5; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#12161c; --card:#1b2129; --txt:#e5e7eb; --azul:#6ea8fe; --verde:#4cc38a; --borda:#2f3742; }
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family: Segoe UI, Arial, sans-serif; background:var(--bg); color:var(--txt); }
+header { background:var(--azul); color:#fff; padding:28px 20px; text-align:center; }
+header h1 { margin:0 0 6px; font-size:1.6rem; }
+header p { margin:4px 0; }
+.legenda { max-width:1000px; margin:16px auto; padding:12px 16px; background:var(--card); border-left:4px solid var(--azul); border-radius:6px; }
+nav { max-width:1000px; margin:0 auto 16px; padding:0 16px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+#filtros { display:flex; flex-wrap:wrap; gap:6px; }
+button, input { font:inherit; }
+button { cursor:pointer; border:1px solid var(--borda); background:var(--card); color:var(--txt); padding:6px 12px; border-radius:20px; }
+button.ativo, button:hover { background:var(--azul); color:#fff; border-color:var(--azul); }
+input[type=search] { padding:6px 12px; border:1px solid var(--borda); border-radius:20px; background:var(--card); color:var(--txt); }
+#progresso { margin-left:auto; font-size:.9rem; }
+main { max-width:1000px; margin:0 auto; padding:0 16px 40px; }
+h2 { margin:28px 0 10px; border-bottom:2px solid var(--azul); padding-bottom:4px; }
+.card { display:grid; grid-template-columns: minmax(220px,1fr) 1.4fr; gap:16px; background:var(--card); border:1px solid var(--borda); border-radius:10px; padding:14px; margin-bottom:16px; }
+.card img { width:100%; border-radius:6px; background:#000; cursor:zoom-in; }
+.card h3 { margin:0 0 4px; font-size:1.05rem; }
+.card .tipo { color:var(--azul); font-weight:600; margin-bottom:10px; }
+.resposta { display:none; margin-top:10px; }
+.card.aberto .resposta { display:block; }
+.resposta p { margin:6px 0; padding:6px 10px; border-left:3px solid var(--verde); background:rgba(25,135,84,.08); }
+@media (max-width:640px) { .card { grid-template-columns:1fr; } }
+dialog { border:none; padding:0; background:transparent; max-width:95vw; }
+dialog img { max-width:95vw; max-height:90vh; }
+dialog::backdrop { background:rgba(0,0,0,.8); }
+footer { text-align:center; padding:20px; font-size:.85rem; opacity:.7; }
